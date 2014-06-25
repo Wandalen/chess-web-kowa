@@ -29,6 +29,7 @@ public class Server {
         HttpServer httpServer = GrizzlyHttpServerFactory.createHttpServer(URI.create(BASE_URI), rc);
         ServerConfiguration config = httpServer.getServerConfiguration();
         config.addHttpHandler(new ChessStaticHttpHandler(), "/chess");
+        //config.addHttpHandler(new ChessStaticHttpHandler(), "/");
 
         return httpServer;
     }
@@ -61,4 +62,5 @@ public class Server {
             setFileCacheEnabled(false);
         }
     }
+
 }

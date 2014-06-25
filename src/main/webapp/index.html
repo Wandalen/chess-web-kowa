@@ -1,12 +1,113 @@
-<html>
-<body>
+<!DOCTYPE HTML>
+<html lang="en">
+	<head>
+		<title>Chess</title>
+		<meta charset="utf-8">
 
-<p>
-    Welcome to the Chess Web!
-</p>
-<p>
-    You'll probably want to update this file, eh?
-</p>
+		<!-- icons -->
+		<link rel="shortcut icon" href="favicon.ico">
+		<meta property="og:image" content="bigicon.jpg">
 
-</body>
+		<!-- predefined -->
+		<meta name="description" content="Chess">
+		<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1">
+
+		<!--style-->
+			<link href="/chess/style/_pre/basic.less" rel="stylesheet" type="text/less" />
+			<link href="/chess/style/_pre/lib.less" rel="stylesheet" type="text/less" />
+			<link href="/chess/style/stats.less" rel="stylesheet" type="text/less" />
+			<link href="/chess/style/_post/layout.less" rel="stylesheet" type="text/less" />
+		<!--style-->
+
+		<!--ext-->
+			<script src="/chess/script/common/_pre/Jquery-2.0.3.js" type="text/javascript" ></script>
+			<script src="/chess/script/common/_pre/Jquery.mousewheel.js" type="text/javascript" ></script>
+			<script src="/chess/script/webgl/_pre/Three.js" type="text/javascript" ></script>
+			<script src="/chess/script/common/Less.js" type="text/javascript" ></script>
+			<script src="/chess/script/common/LessConfig.js" type="text/javascript" ></script>
+			<script src="/chess/script/common/Tween.js" type="text/javascript" ></script>
+			<script src="/chess/script/webgl/Debug.js" type="text/javascript" ></script>
+			<script src="/chess/script/webgl/Stats.js" type="text/javascript" ></script>
+			<script src="/chess/script/webgl/feature/Mirror.js" type="text/javascript" ></script>
+			<script src="/chess/script/webgl/loader/ColladaLoader2.js" type="text/javascript" ></script>
+			<script src="/chess/script/webgl/renderer/WebGLProgram.js" type="text/javascript" ></script>
+			<script src="/chess/script/webgl/renderer/WebGLRenderer.js" type="text/javascript" ></script>
+		<!--ext-->
+
+		<!--core-->
+			<script src="/chess/script/core/gutils/Gutils.js" type="text/javascript" ></script>
+			<script src="/chess/script/core/gutils/GutilsGeometry.js" type="text/javascript" ></script>
+			<script src="/chess/script/core/gutils/GutilsArithmetic.js" type="text/javascript" ></script>
+			<script src="/chess/script/core/chess/Chess.js" type="text/javascript" ></script>
+			<script src="/chess/script/core/chess/Chessman.js" type="text/javascript" ></script>
+			<script src="/chess/script/core/chess/Player.js" type="text/javascript" ></script>
+			<script src="/chess/script/core/control/Orbital.js" type="text/javascript" ></script>
+			<script src="/chess/script/core/graphics/Detector.js" type="text/javascript" ></script>
+			<script src="/chess/script/core/graphics/Visualiser.js" type="text/javascript" ></script>
+			<script src="/chess/script/core/graphics/VisualiserExtended.js" type="text/javascript" ></script>
+			<script src="/chess/script/core/main/Version.js" type="text/javascript" ></script>
+			<script src="/chess/script/core/shader/Depth.js" type="text/javascript" ></script>
+			<script src="/chess/script/core/webgl/Extension.js" type="text/javascript" ></script>
+			<script src="/chess/script/core/webgl/Float2.js" type="text/javascript" ></script>
+			<script src="/chess/script/core/webgl/Float3.js" type="text/javascript" ></script>
+			<script src="/chess/script/core/webgl/Int3.js" type="text/javascript" ></script>
+			<script src="/chess/script/core/main/_post/Chess.js" type="text/javascript" ></script>
+		<!--core-->
+
+		<!--gui-->
+		<link rel="stylesheet" type="text/css" href="/chess/style/jqx.base.css" />
+		<link rel="stylesheet" type="text/css" href="/chess/style/themes/metro/easyui.css" />
+		<link rel="stylesheet" type="text/css" href="/chess/style/themes/metro/adjust.css" />
+		<script type="text/javascript" src="/chess/script/common/jqwidgets/jqxcore.js"></script>
+		<script type="text/javascript" src="/chess/script/common/jqwidgets/jqxbuttons.js"></script>
+		<script type="text/javascript" src="/chess/script/common/jqwidgets/jqxscrollbar.js"></script>
+		<script type="text/javascript" src="/chess/script/common/jqwidgets/jqxcheckbox.js"></script>
+		<script type="text/javascript" src="/chess/script/common/jqwidgets/jqxmenu.js"></script>
+		<script type="text/javascript" src="/chess/script/common/jqwidgets/jqxwindow.js"></script>
+		<script type="text/javascript" src="/chess/script/common/jeasyui/jquery.easyui.min.js"></script>
+		<!--gui-->
+
+
+	</head>
+	<body class="visualisation">
+
+		<!-- panel top -->
+		<div class="panel-top">
+
+			<div id='panel-menu' style='visibility: hidden;'>
+				<ul>
+					<li type='separator'></li>
+					<li><div id="checkbox-camera-transition">Camera Transition</div></li>
+					<li type='separator'></li>
+					<li id="button-fullscreen"><a href="#">Fullscreen</a></li>
+					<li id="button-restart"><a href="#">Restart</a></li>
+					<li id="button-about"><a href="#">About</a></li>
+				</ul>
+			</div>
+
+		</div>
+
+		<!-- panel mid -->
+		<div class="panel-mid">
+
+			<div class="panel-surfaces">
+				<div class="panel-surface"></div>
+			</div>
+
+			<div id="panel-about">
+				<div> About </div>
+				<div>
+					<div class="panel-about-surface">
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+		<!-- panel bottom -->
+		<div class="panel-bottom">
+		</div>
+
+
+	</body>
 </html>

@@ -1,0 +1,27 @@
+.window {
+}
+.messager-icon {
+  display: none;
+}
+
+.messager-body .messager-input {
+	border: 0px solid #ddd;
+}
+
+.window {
+	border: 0px;
+	background-color: rgba( 100,100,100,0.2 );
+}
+
+.window .window-body{
+	padding: 20px;
+	text-align: center;
+	border: 0px;
+	background-color: rgba( 100,100,100,0.3 );
+	color: #eee;
+	font: 25px "Lucida Grande", "Lucida Sans Unicode", "Verdana", "Vera Sans", "Helvetica", "Arial", sans-serif;
+
+	text-shadow: 3px 3px 3px #000000;
+
+}
+

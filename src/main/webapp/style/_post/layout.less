@@ -1,0 +1,175 @@
+@charset "UTF-8";
+
+.panel-top
+{
+	position: relative;
+	width: 100%;
+	height: 24px;
+	height: auto;
+
+	background: #212327;
+	border-width: 0 0 1px 0;
+	border-style: solid; /*none || hidden || dotted || dashed || solid || double || groove || ridge || inset || outset */
+	border-color: #415365;
+	border-collapse: collapse; /* collapse || separate */
+	box-shadow: 0px 0px 5px 3px #111315; /* 10px 10px 5px 0px #eeeeee */
+
+	z-index: 1;
+}
+
+.panel-mid
+{
+	z-index: 0;
+	//position: fixed;
+	position: relative;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	//min-height: 700px;
+	//min-width: 700px;
+	height: 100%;
+	width: 100%;
+}
+
+.panel-bottom
+{
+	position: absolute;
+	display: block;
+	bottom: 18px;
+	width: 100%;
+	height: 1px;
+	overflow: visible;
+}
+
+.panel-surfaces
+{
+	position: relative;
+	width: auto;
+	height: 100%;
+	overflow: hidden;
+	overflow: visible;
+	background-color: transparent;
+}
+
+.panel-surface
+{
+	position: absolute;
+	width: 100%;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+
+.panel-surface.panel-surface.panel-surface canvas
+{
+	width: 100%;
+	height: 100%;
+}
+
+.panel-surface-left
+{
+	left: 0;
+}
+
+.panel-surface-right
+{
+	width: 0%;
+	right: 0;
+	left: auto;
+}
+
+.panel-surface-render
+{
+	width: 0%;
+	right: 0;
+	z-index: -10;
+}
+
+.panel-data .panel-data-number.panel-data-number.panel-data-number
+{
+	width: 20%;
+	float: left;
+}
+
+.panel-warning
+{
+	margin: 1em auto;
+	padding: 0.5em 1em;
+	position: fixed;
+	display: none;
+
+	z-index: -1;
+	font-size: 200%;
+	background: none repeat scroll 0 0 #906000;
+	border-radius: 1em;
+	opacity: 0.4;
+	bottom: 50%;
+	//top: 1em;
+	box-shadow: 0 0 1em #906000;
+	color: #FFFFFF;
+	left: 0;
+	right: 0;
+	text-align: center;
+	width: 50%;
+	//height: 100px;
+}
+
+.colpick {
+	z-index: 1000;
+}
+
+.panel-text:not( .panel-data ),
+.panel-drawing:not( .panel-data ),
+.panel-sticker:not( .panel-data ),
+.panel-texturing:not( .panel-data ),
+.panel-action:not( .panel-data ),
+*:not( .panel-data ) + .texturing-action-seam
+{
+	display: none;
+}
+
+/*texturing-action-seam*/
+
+/* buttons */
+
+.panel-tool .panel-data-buttons,
+.panel-tool .panel-data-button-small
+{
+	display: inline-block;
+	vertical-align: top;
+	margin: 0;
+	padding: 0;
+	border: 0px solid transparent;
+	background-color: transparent;
+	color: #aaa;
+	position: relative;
+	white-space: pre;
+	text-align: center;
+}
+
+.panel-tool .panel-data-buttons {
+
+	overflow: hidden;
+	overflow: visible;
+	width: auto;
+	float: right;
+	clear: none;
+	position: absolute;
+	top: 1px;
+	left: 10px;
+
+	z-index: 5;
+
+}
+
+.panel-about-surface {
+
+	background-image: url("/chess/style/images/chessboard.png");
+	background-repeat: no-repeat;
+	background-position: center center;
+	height: 90%;
+	width: 100%;
+
+}
